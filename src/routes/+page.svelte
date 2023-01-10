@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visits <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Auth from '$lib/Auth.svelte';
+	import Transaction from '$lib/Transaction.svelte';
+</script>
+
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
+<div class="mb-2">
+	<Transaction />
+</div>
+
+<Auth />
+
+<h1>Flow dApp Homepage</h1>
